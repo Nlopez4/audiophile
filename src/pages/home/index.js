@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles.css';
+import NewProduct from '../../components/Home/NewProduct/index';
 
 function HomePage() {
     return (
         <div className="home-container">
-            <h1>Home Page</h1>
+           <NewProduct />
         </div>
     )
 }
