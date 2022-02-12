@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 import NewProduct from '../../components/Home/NewProduct/index';
 import Links from '../../components/Home/Links/index';
 import Products from '../../components/Home/Products/index';
