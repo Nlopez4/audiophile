@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Switch}
+import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import HomePage from './home/index';
@@ -13,11 +13,11 @@ function AllPages() {
         <Router>
             <Navbar />
             <Routes>
-            <Route exact path='/' exact element={<HomePage />} />
-            <Route exact path='/cart' exact element={<CartPage />} />
-            <Route exact path='/earphones' exact element={<EarphonesPage />} />
-            <Route exact path='/headphones' exact element={<HeadphonesPage />} />
-            <Route exact path='/speakers' exact element={<SpeakersPage />} />
+            <Route exact path='/' element={<HomePage />} />
+            <Route exact path='/cart' element={<CartPage />} />
+            <Route exact path='/earphones' element={<EarphonesPage />} />
+            <Route exact path='/headphones' element={<HeadphonesPage />} />
+            <Route exact path='/speakers' element={<SpeakersPage />} />
             </Routes>
         </Router>
     )
