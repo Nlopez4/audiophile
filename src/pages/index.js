@@ -7,6 +7,7 @@ import CartPage from './cart/index';
 import EarphonesPage from './earphones/index';
 import HeadphonesPage from './headphones/index';
 import SpeakersPage from './speakers/index';
+import NewProdItem from './NewProdItem/index';
 
 function AllPages() {
     return (
@@ -18,6 +19,7 @@ function AllPages() {
             <Route exact path='/earphones' element={<EarphonesPage />} />
             <Route exact path='/headphones' element={<HeadphonesPage />} />
             <Route exact path='/speakers' element={<SpeakersPage />} />
+            <Route exact path='/NewProdItem' element={<NewProdItem />} />
             </Routes>
         </Router>
     )
