@@ -3,8 +3,10 @@ import './styles.scss';
 
 function Footer() {
     return (
-        <section>
-            <h1>Footer</h1>
+        <section className="footer-container">
+            <div className="footer-info">
+                <h1>Footer</h1>
+            </div>
         </section>
     )
 }
