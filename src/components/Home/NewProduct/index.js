@@ -7,7 +7,7 @@ import NewHeadphones from '../../../images/image-hero.jpg';
 function NewProduct() {
     const navigate = useNavigate(); 
     return (
-        <section className="newprod-container">
+        <section className="newprod-container" style={{ backgroundImage: `url(${NewHeadphones})` }}>
             <div className="newprod-info">
                 <img src={NewHeadphones} alt="" />
                 <h1>NEW PRODUCT</h1>
