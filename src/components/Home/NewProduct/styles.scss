@@ -1,5 +1,7 @@
+@use '../../../styles.scss';
+
 .newprod-container {
     background-image: url('../../../../public/images/home/image-hero.jpg');
-    // color: $light-text-color;
+    color: styles.$light-text-color; 
 }
 

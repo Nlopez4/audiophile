@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './styles.scss';
 import AllPages from './pages/index';
 
 import reportWebVitals from './reportWebVitals';
