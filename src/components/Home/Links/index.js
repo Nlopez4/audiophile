@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Links() {
     return (
-        <div className="links">
+        <section className="links">
             <Link to='/earphones'>
                 Earphones
             </Link>
@@ -14,7 +14,7 @@ function Links() {
             <Link to='/speakers'>
                 Speakers
             </Link>
-        </div>
+        </section>
     )
 }
 

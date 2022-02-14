@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import HomePage from './home/index';
 import CartPage from './cart/index';
 import EarphonesPage from './earphones/index';
@@ -10,6 +11,7 @@ import SpeakersPage from './speakers/index';
 import NewProdItem from './newProdItem/index';
 import Speaker1 from './speaker1/index';
 import Speaker2 from './speaker2/index';
+
 
 function AllPages() {
     return (
@@ -25,7 +27,9 @@ function AllPages() {
             <Route exact path='/speaker1' element={<Speaker1 />} />
             <Route exact path='/speaker2' element={<Speaker2 />} />
             </Routes>
+            <Footer />
         </Router>
+       
     )
 }
   

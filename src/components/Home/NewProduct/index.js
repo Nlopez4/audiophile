@@ -8,12 +8,12 @@ function NewProduct() {
            navigate('/NewProdItem')
        }
     return (
-        <div className="newprod-container">
+        <section className="newprod-container">
             <h1>NEW PRODUCT</h1>
             <p>XX99 MARK II HEADPHONES</p>
             <p>lorem ipsum dolor sit amet</p>
             <button onClick={() => navigate("/NewProdItem")}>See Product</button>
-        </div>
+        </section>
     )
 }
 
