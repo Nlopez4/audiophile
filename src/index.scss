@@ -17,9 +17,11 @@ $heading-font: 'Manrope', sans-serif; // for headings and paragraphs
 
 // FONT WEIGHTS
 
-
-
 body {
+  margin: auto; 
+}
+
+.newprod-info {
   display: block;
   margin: auto;
   max-height: 90%;
