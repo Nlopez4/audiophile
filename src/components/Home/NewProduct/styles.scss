@@ -1,6 +1,26 @@
 @use '../../../styles.scss';
 
-.newprod-container {
+.newprod-image {
+    background-image: url('../../../images/image-hero.jpg');
     color: styles.$light-text-color; 
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    object-fit: fill;
+    max-width: 100%; 
+    height: 80vh;
+}
+
+.newprod-info {
+    position: relative;
+    top: 40%;
+}
+
+@media screen and (min-width:800px) {
+    .newprod-image {
+        height: 650px;
+        background-position: center;
+    }
 }
 
