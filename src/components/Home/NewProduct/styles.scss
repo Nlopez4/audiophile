@@ -14,7 +14,58 @@
 
 .newprod-info {
     position: relative;
-    top: 40%;
+    top: 30%;
+}
+
+.new-text {
+    font-size: 14px;
+    line-height:19px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-family: styles.$heading-font;
+}
+
+.newprod-name {
+    font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.newprod-info-text {
+    font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    width: 50%;
+    top: -52.89%;
+    bottom: 25.43%;
+}
+
+.newprod-bttn {
+    width: 160px;
+    height: 45px;
+    font-family: styles.$heading-font;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: styles.$light-text-color;
+    background-color: styles.$accent-color;
+    border: none;
+    
 }
 
 @media screen and (min-width:800px) {
