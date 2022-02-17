@@ -18,9 +18,10 @@ $heading-font: 'Manrope', sans-serif; // for headings and paragraphs
 
 // FONT WEIGHTS
 
-body {
-  margin: auto; 
-  width: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .nav-info,
@@ -30,7 +31,6 @@ body {
 .speaker-1, 
 .speaker-2, 
 .footer-info {
-  display: block;
   margin: auto;
   max-height: 90%;
   max-width: 80%;
