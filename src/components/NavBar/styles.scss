@@ -1,5 +1,29 @@
-.nav-container {
+@use '../../styles.scss';
+
+.nav-section {
     background-color: #1a1a1a;
     width: 100%;
     height: 50px;
+    
+}
+
+.nav-info {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    color: styles.$light-text-color; 
+    padding: 10px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.audio-p {
+    color: styles.$light-text-color;
+    font-family: styles.$nav-name;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: styles.$light-text-color
 }

@@ -6,25 +6,30 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="nav-container">
-            <div className="nav-info">
-                <Link to='/'>
-                    Home
-                </Link>
-                <Link to='/earphones'>
-                    Earphones
-                </Link>
-                <Link to='/headphones'>
-                    Headphones
-                </Link>
-                <Link to='/speakers'>
-                    Speakers
-                </Link>
-                <Link to='/cart'>
-                    Cart
-                </Link>
+        <section className="nav-section">
+            <div className="nav-container">
+                <p className="audio-p">audiophile</p>
+                <div className="nav-info">
+                    <Link className="nav-link" to='/'>
+                        Home
+                    </Link>
+                    <Link className="nav-link" to='/earphones'>
+                        Earphones
+                    </Link>
+                    <Link className="nav-link" to='/headphones'>
+                        Headphones
+                    </Link>
+                    <Link className="nav-link" to='/speakers'>
+                        Speakers
+                    </Link>
+                    <div className="cart">
+                        <Link className="nav-link" to='/cart'>
+                            Cart
+                        </Link>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 

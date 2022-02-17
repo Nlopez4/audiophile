@@ -1,0 +1,15 @@
+@use '../../styles.scss';
+.nav-container {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 50px;
+}
+
+.nav-info {
+  border-bottom: 1px solid grey;
+}
+
+Link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
