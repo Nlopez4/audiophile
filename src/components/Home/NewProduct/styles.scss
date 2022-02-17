@@ -4,36 +4,48 @@
     background-image: url('../../../images/image-hero.jpg');
     color: styles.$light-text-color; 
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: cover;
+    background-attachment: local;
     object-fit: fill;
     width: 100%; 
-    height: 80vh;
     height: auto;
+    position: relative;
+}
+
+.newprod-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .newprod-info {
-    position: relative;
-    top: 30%;
+   text-align: left;
+   position: relative;
+   top: 20%;
 }
 
+//    width: min(900px, 75%);
 .new-text {
-    font-size: clamp(0.9rem, 1.5vw, 2rem);
-    line-height:19px;
+    font-size: clamp(0.6rem, 1.5vw, 2rem);
+    line-height:1.7;
     letter-spacing: 10px;
     text-transform: uppercase;
     mix-blend-mode: normal;
     opacity: 0.5;
     font-family: styles.$heading-font;
+   
 }
 
 .newprod-name {
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(2.2rem, 3.5vw, 5rem);
-    line-height: 58px;
+    font-size: clamp(2.0rem, 3.5vw, 5rem);
+    line-height:1.5;
     letter-spacing: 2px;
     text-transform: uppercase;
     width: 50%;
@@ -44,7 +56,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: clamp(0.8rem, 1.5vw, 1.8rem);
-    line-height: 25px;
+    line-height:1.5;
     mix-blend-mode: normal;
     opacity: 0.75;
     width: 30%;
@@ -60,25 +72,49 @@
     font-style: normal;
     font-weight: bold;
     font-size: clamp(0.6rem, 1.5vw, 1rem);
-    line-height: 18px;
+    line-height:1.5;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: styles.$light-text-color;
     background-color: styles.$accent-color;
     border: none;
+    margin-top: 20px;
     
 }
 
 @media screen and (min-width:800px) {
     .newprod-image {
-        height: 650px;
+        height: 750px;
         background-position: center;
     }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:600px) {
     .newprod-info {
-       left: 25%
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newprod-image {
+        height: 400px;
+        background-position: 85% 60%;
+        background-attachment: center;
+    }
+
+    .newprod-info-text {
+        width: 80%;
+        text-align: center;
+    }
+    .newprod-name {
+        width: 100%;
+        text-align: center;
+    }
+
+    .newprod-bttn {
+        width: 100px;
+        height: 35px;
     }
 }
 
