@@ -28,12 +28,28 @@ header {
 }
 
 
-.nav-link {
+.nav-link, .cart-link {
     text-decoration: none;
     font-family: styles.$heading-font;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: clamp(0.3rem, 1.4vw, 0.8rem);
     color: styles.$light-text-color;
+}
 
+
+.menu {
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .nav-info, .cart {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: flex;
+    }
 }
