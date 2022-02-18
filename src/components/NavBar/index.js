@@ -3,6 +3,7 @@ import './styles.scss';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { IconContext } from "react-icons";
 
 
 
@@ -25,12 +26,16 @@ const Navbar = () => {
                         Speakers
                     </NavLink>
                 </div>
-                <div className="cart">
-                    <NavLink className="nav-link" to='/cart'>
-                        <AiOutlineShoppingCart />
-                    </NavLink>
+                <IconContext.Provider value={{ size: "20", className: "cart" }}>
+                    <div className="cart-container">
+                        <NavLink className="cart-link" to='/cart'>
+                            <AiOutlineShoppingCart />
+                        </NavLink>
+                    </div>
+                </IconContext.Provider>
+                <div className="menu">
+                    <AiOutlineMenu />
                 </div>
-                <AiOutlineMenu />
             </header>
         </section>
     )
