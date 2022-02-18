@@ -1,6 +1,6 @@
 @use '../../styles.scss';
 
-.nav-section {
+section {
     background-color: #1a1a1a;
     width: 100%;
 }
@@ -9,21 +9,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px;
+    border-bottom: 1px solid grey;
 }
 
 
 .audio-p {
     color: styles.$light-text-color;
     font-family: styles.$nav-name;
+    font-size: clamp(1.0rem, 1.4vw, 1.5rem);
 }
+
+.nav-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
 
 .nav-link {
     text-decoration: none;
     font-family: styles.$heading-font;
     text-transform: uppercase;
-    font-size: clamp(0.3rem, 1.4vw, 0.9rem);
+    letter-spacing: 2px;
+    font-size: clamp(0.3rem, 1.4vw, 0.8rem);
     color: styles.$light-text-color;
-    display: inline-block;
-    
+
 }
