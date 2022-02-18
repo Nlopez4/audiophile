@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 
@@ -25,9 +27,10 @@ const Navbar = () => {
                 </div>
                 <div className="cart">
                     <NavLink className="nav-link" to='/cart'>
-                        Cart
+                        <AiOutlineShoppingCart />
                     </NavLink>
                 </div>
+                <AiOutlineMenu />
             </header>
         </section>
     )
