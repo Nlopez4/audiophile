@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -10,23 +10,23 @@ const Navbar = () => {
             <header className="nav-container">
                 <p className="audio-p">audiophile</p>
                 <div className="nav-info">
-                    <Link className="nav-link" to='/'>
+                    <NavLink className="nav-link" to='/'>
                         Home
-                    </Link>
-                    <Link className="nav-link" to='/earphones'>
+                    </NavLink>
+                    <NavLink className="nav-link" to='/earphones'>
                         Earphones
-                    </Link>
-                    <Link className="nav-link" to='/headphones'>
+                    </NavLink>
+                    <NavLink className="nav-link" to='/headphones'>
                         Headphones
-                    </Link>
-                    <Link className="nav-link" to='/speakers'>
+                    </NavLink>
+                    <NavLink className="nav-link" to='/speakers'>
                         Speakers
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className="cart">
-                    <Link className="nav-link" to='/cart'>
+                    <NavLink className="nav-link" to='/cart'>
                         Cart
-                    </Link>
+                    </NavLink>
                 </div>
             </header>
         </section>
