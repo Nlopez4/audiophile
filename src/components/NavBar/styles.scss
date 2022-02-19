@@ -1,7 +1,7 @@
 @use '../../styles.scss';
 
-section {
-    background-color: #1a1a1a;
+.nav-section {
+    background-color: styles.$light-black;
     width: 100%;
 }
 

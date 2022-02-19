@@ -1,13 +1,12 @@
 import React from 'react';
 import './styles.scss';
 import { useNavigate } from "react-router-dom";
-// import NewHeadphones from '../../../images/image-hero.jpg';
 
 
 function NewProduct() {
     const navigate = useNavigate(); 
     return (
-        <section className="newprod-container">
+        <section className="newprod-section">
             <div className="newprod-image">
                 <div className="newprod-info">
                     <h1 className="new-text">NEW PRODUCT</h1>
@@ -21,5 +20,3 @@ function NewProduct() {
 }
 
 export default NewProduct;
-
-// style={{ backgroundImage: `url(${NewHeadphones})` }}

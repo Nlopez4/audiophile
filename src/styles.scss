@@ -5,6 +5,7 @@
 // COLORS
 $primary-color: #F2F2F2; // background color 
 $secondary-color: #141414; // this color is on some backgrounds
+$light-black: #1a1a1a; // light black background
 $light-grey: #F1F1F1; // background color for item boxes
 $dark-grey: #979797; // darker grey background color for some items
 $accent-color: #D87D4A; 
@@ -26,10 +27,7 @@ $heading-font: 'Manrope', sans-serif; // for headings and paragraphs
 
 .nav-container,
 .newprod-info,  
-.links-info,
-.about-info, 
-.speaker-1, 
-.speaker-2, 
+.about-info,  
 .footer-info {
   margin: auto;
   max-height: 90%;
