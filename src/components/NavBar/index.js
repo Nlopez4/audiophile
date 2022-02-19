@@ -11,19 +11,12 @@ const Navbar = () => {
     return (
         <section className="nav-section">
             <header className="nav-container">
-                <p className="audio-p">audiophile</p>
+                <NavLink className="audio-p" to='/'>
+                    audiophile
+                </NavLink>
                 <div className="nav-info">
-                    <NavLink className="nav-link" to='/'>
-                        Home
-                    </NavLink>
-                    <NavLink className="nav-link" to='/earphones'>
-                        Earphones
-                    </NavLink>
                     <NavLink className="nav-link" to='/headphones'>
                         Headphones
-                    </NavLink>
-                    <NavLink className="nav-link" to='/speakers'>
-                        Speakers
                     </NavLink>
                 </div>
                 <IconContext.Provider value={{ size: "20", className: "cart" }}>
