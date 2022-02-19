@@ -1,5 +1,9 @@
 @use '../../../styles.scss';
 
+.newprod-section {
+    background-color: styles.$light-black;
+}
+
 .newprod-image {
     background-image: url('../../../images/image-hero.jpg');
     color: styles.$light-text-color; 

@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HomePage from './home/index';
 import CartPage from './cart/index';
-import HeadphonesPage from './headphones/index';
 import NewProdItem from './newProdItem/index';
 
 
@@ -17,7 +16,6 @@ function AllPages() {
             <Routes>
             <Route exact path='/' element={<HomePage />} />
             <Route exact path='/cart' element={<CartPage />} />
-            <Route exact path='/headphones' element={<HeadphonesPage />} />
             <Route exact path='/newProdItem' element={<NewProdItem />} />
             </Routes>
             <Footer />
