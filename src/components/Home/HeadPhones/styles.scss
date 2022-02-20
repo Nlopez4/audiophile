@@ -1,13 +1,65 @@
 @use '../../../styles.scss';
 
 .headphones-section {
-    background-color: styles.$primary-color
+    background-color: styles.$primary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark1-image {
+    content: url('../../../images/mark1.jpg');
+    width: 500px;
+    background: black;
+}
+
+.headphones-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
 }
 
 .prod-1 {
+    width: 400px;
     font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(2.0rem, 1.5vw, 2.5rem);
+    line-height:1.5;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  
 }
 
-.prod-p {
+.p-1 {
+    width: 400px;
     font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    line-height:1.5;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.cart-btn {
+    width: 150px;
+    height: 50px;
+    font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(0.4rem, 1.5vw, 0.7rem);
+    line-height:1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: styles.$light-text-color;
+    background-color: styles.$accent-color;
+    border: none;
+    margin-top: 20px;
+
 }
