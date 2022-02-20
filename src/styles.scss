@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cutive+Mono&family=Dancing+Script:wght@600&family=Josefin+Sans:wght@100&family=Jost&family=Lato&family=Lobster&family=Maitree:wght@200&family=Manrope&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Orbitron:wght@700&family=Pacifico&family=Philosopher&family=Play&family=Playfair+Display:wght@400;500&family=Poppins:wght@500;600&family=Press+Start+2P&family=Quicksand&family=Raleway:wght@100&family=Roboto:wght@300&family=Urbanist:wght@500;600&display=swap');
 
 // COLORS
-$primary-color: #F2F2F2; // background color 
+$primary-color: #FFFFFF; // background color & text color
 $secondary-color: #141414; // this color is on some backgrounds
 $light-black: #1a1a1a; // light black background
 $light-grey: #F1F1F1; // background color for item boxes
@@ -23,6 +23,10 @@ $heading-font: 'Manrope', sans-serif; // for headings and paragraphs
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .nav-container,

@@ -1,17 +1,26 @@
 @use '../../../styles.scss';
 
 .headphones-section {
+    min-height: 100vh;
+    min-width: 100%;
     background-color: styles.$primary-color;
     display: flex;
     flex-direction: row;
+    gap: 13%;
     justify-content: center;
     align-items: center;
+}
+
+.image-bg {
+    width: 500px;
+    height: 500px;
+    background-color: styles.$light-grey;
 }
 
 .mark1-image {
     content: url('../../../images/mark1.jpg');
     width: 500px;
-    background: black;
+    height: 500px;
 }
 
 .headphones-info {
