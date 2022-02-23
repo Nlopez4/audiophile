@@ -73,3 +73,9 @@
     cursor: pointer;
 
 }
+
+.price {
+    font-family: styles.$heading-font;
+    font-weight: bolder;
+    font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+}
