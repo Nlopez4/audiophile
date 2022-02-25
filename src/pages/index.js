@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import HomePage from './home/index';
 import CartPage from './cart/index';
 import NewProdItem from './newProdItem/index';
+import { commerce } from '../lib/commerce';
 
 
 
