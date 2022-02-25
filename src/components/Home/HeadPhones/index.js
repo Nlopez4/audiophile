@@ -14,13 +14,12 @@ function HeadPhones(props) {
         <section className="headphones-section">
             <div className="mark1-image"></div>
             {products.map((product) => (
-            <div className="headphones-info" key={1}>
+            <div className="headphones-info" key={product.id}>
                 <h1 className="prod-1">{product.name}</h1>
                 <p className="p-1">{product.description}</p>
                 <p className="price">{product.price}</p>
                 <button className="cart-btn">Add to Cart</button>
             </div>
-            
             ))}
         </section>
     )
