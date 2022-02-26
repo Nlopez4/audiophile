@@ -18,13 +18,15 @@ function HeadPhones(props) {
                 {products.map((product) => (
                 <div className="headphones-info" key={product.id}>
                     <img className="product-images" src={product.image} />
-                    <h1 className="prod-1">{product.name}</h1>
-                    <p className="p-1">{product.description}</p>
-                    <p className="price">{product.price}</p>
-                    <button className="cart-btn">Add to Cart</button>
+                    <div className="hp-text">
+                        <h1 className="prod-1">{product.name}</h1>
+                        <p className="p-1">{product.description}</p>
+                        <p className="price">{product.price}</p>
+                        <button className="cart-btn">Add to Cart</button>
+                    </div>
                 </div>
                 ))}
-             </div>
+            </div>
         </section>
     )
 }
