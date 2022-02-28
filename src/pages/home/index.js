@@ -28,12 +28,11 @@ function HomePage() {
         fetchProducts();
         fetchCart();
     }, []); 
-
-    console.log(cart);
+    console.log(cart)
     return (
         <div className="home-container">
            <NewProduct />
-           <ProductsList />
+           <ProductsList products={products} onAddToCart={handleAddToCart}/>
            <About />
         </div>
     )
