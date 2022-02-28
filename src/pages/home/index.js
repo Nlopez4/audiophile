@@ -1,7 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import './styles.scss';
 import NewProduct from '../../components/NewProduct/index';
-import Products from '../../components/Products/index';
+import ProductsList from '../../components/ProductsList/index';
 import About from '../../components/Cart/About/index';
 import { commerce } from '../../lib/commerce';
 
@@ -33,7 +33,7 @@ function HomePage() {
     return (
         <div className="home-container">
            <NewProduct />
-           <Products />
+           <ProductsList />
            <About />
         </div>
     )
