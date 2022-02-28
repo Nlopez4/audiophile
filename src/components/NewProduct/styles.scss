@@ -1,4 +1,4 @@
-@use '../../../styles.scss';
+@use '../../styles.scss';
 
 .newprod-section {
     min-height: 100vh;
@@ -7,7 +7,7 @@
 }
 
 .newprod-image {
-    background-image: url('../../../images/image-hero.jpg');
+    background-image: url('../../images/image-hero.jpg');
     color: styles.$light-text-color; 
     background-size: 80%;
     background-position: top center; 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import xx59 from '../../../images/xx59.jpg';
-import mark1 from '../../../images/mark1.jpg';
+import xx59 from '../../images/xx59.jpg';
+import mark1 from '../../images/mark1.jpg';
 
 // Display data here
 // Parent component 
@@ -10,8 +10,8 @@ const products = [
     { id: 2, image: xx59, name: 'XX59 Headphones', description: 'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.', price:'$1,950'},
 ]
 
-
-function HeadPhones(props) {
+// function can only have one prop 
+function Products() {
     return (
         <section className="headphones-section">
             <div className="hp-container">
@@ -31,4 +31,4 @@ function HeadPhones(props) {
     )
 }
 
-export default HeadPhones;
+export default Products;
