@@ -2,12 +2,12 @@ import React from 'react';
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { IconContext } from "react-icons";
+import { IconButton, Badge, } from '@material-ui/core';
+import { ShoppingCart } from '@material-ui/icons';
 
 
 
-const Navbar = () => {
+const Navbar = ({ totalItems }) => {
     return (
         <section className="nav-section">
             <header className="nav-container">
@@ -19,13 +19,11 @@ const Navbar = () => {
                         Headphones
                     </NavLink>
                 </div>
-                <IconContext.Provider value={{ size: "20", className: "cart" }}>
-                    <div className="cart-container">
-                        <NavLink className="cart-link" to='/cart'>
-                            <AiOutlineShoppingCart />
-                        </NavLink>
-                    </div>
-                </IconContext.Provider>
+                <IconButton className="cart" to="/cart" aria-label="Show cart items">
+                    <Badge badgeContent={totalItems} color="secondary" style={{ color: 'white' }} >
+                        <ShoppingCart />
+                    </Badge>
+                </IconButton>
                 <div className="menu">
                     <AiOutlineMenu />
                 </div>
