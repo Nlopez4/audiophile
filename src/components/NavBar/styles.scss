@@ -38,11 +38,16 @@ header {
     color: styles.$light-text-color;
 }
 
+.cart {
+    color: white;
+}
+
 
 .menu {
     color: white;
     display: none;
 }
+
 
 @media screen and (max-width:900px) {
     .nav-info, .cart {

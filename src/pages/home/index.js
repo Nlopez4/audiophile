@@ -1,5 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import './styles.scss';
+import Navbar from '../../components/Navbar';
 import NewProduct from '../../components/NewProduct/index';
 import ProductsList from '../../components/ProductsList/index';
 import About from '../../components/Cart/About/index';
@@ -31,6 +32,7 @@ function HomePage() {
     console.log(cart)
     return (
         <div className="home-container">
+            <Navbar totalItems={cart.total_items}/>
            <NewProduct />
            <ProductsList products={products} onAddToCart={handleAddToCart}/>
            <About />
