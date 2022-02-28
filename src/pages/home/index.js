@@ -1,27 +1,39 @@
 import React, { useState, useEffect }  from 'react';
 import './styles.scss';
-import NewProduct from '../../components/Home/NewProduct/index';
-import HeadPhones from '../../components/Home/HeadPhones/index';
-import About from '../../components/Home/About/index';
+import NewProduct from '../../components/NewProduct/index';
+import Products from '../../components/Products/index';
+import About from '../../components/Cart/About/index';
 import { commerce } from '../../lib/commerce';
 
 // product data going in home page to populate on home page 
 function HomePage() {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState({});
+
     const fetchProducts = async() => {
         const { data } = await commerce.products.list();
         setProducts(data);
     }
 
+    const fetchCart = async() => {
+        setCart(await commerce.cart.retrieve());
+    }
+
+    const handleAddToCart = async (productId, quantity) => {
+        const item = await commerce.cart.add(productId, quantity);
+        setCart(item.cart);
+    }
+
     useEffect(() => {
         fetchProducts();
+        fetchCart();
     }, []); 
 
-    console.log(products);
+    console.log(cart);
     return (
         <div className="home-container">
            <NewProduct />
-           <HeadPhones />
+           <Products />
            <About />
         </div>
     )
