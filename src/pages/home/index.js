@@ -3,7 +3,7 @@ import './styles.scss';
 import Navbar from '../../components/Navbar';
 import NewProduct from '../../components/NewProduct/index';
 import ProductsList from '../../components/ProductsList/index';
-import About from '../../components/Cart/About/index';
+import About from '../../components/About/index';
 import { commerce } from '../../lib/commerce';
 
 // product data going in home page to populate on home page 
