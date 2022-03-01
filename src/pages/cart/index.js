@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles.scss';
-
+import Cart from '../../components/Cart';
 
 function CartPage() {
     return (
         <div className="cart-container">
-            <h1>Cart Page</h1>
+            <Cart />
         </div>
     )
 }

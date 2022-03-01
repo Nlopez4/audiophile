@@ -33,9 +33,9 @@ function HomePage() {
     return (
         <div className="home-container">
             <Navbar totalItems={cart.total_items}/>
-           <NewProduct />
-           <ProductsList products={products} onAddToCart={handleAddToCart}/>
-           <About />
+            <NewProduct />
+            <ProductsList products={products} onAddToCart={handleAddToCart}/>
+            <About />
         </div>
     )
 }
