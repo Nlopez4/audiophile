@@ -21,13 +21,6 @@ header {
     text-decoration: none;
 }
 
-.nav-info {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-}
-
 
 .nav-link, .cart-link {
     text-decoration: none;
@@ -50,11 +43,6 @@ header {
 
 
 @media screen and (max-width:900px) {
-    .nav-info, .cart {
-        display: none;
-        cursor: pointer;
-    }
-
     .menu {
         display: flex;
     }

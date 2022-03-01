@@ -14,19 +14,13 @@ const Navbar = ({ totalItems }) => {
                 <NavLink className="audio-p" to='/'>
                     audiophile
                 </NavLink>
-                <div className="nav-info">
-                    <NavLink className="nav-link" to='/headphones'>
-                        Headphones
-                    </NavLink>
-                </div>
-                <IconButton className="cart" to="/cart" aria-label="Show cart items">
-                    <Badge badgeContent={totalItems} color="secondary" style={{ color: 'white' }} >
-                        <ShoppingCart />
-                    </Badge>
-                </IconButton>
-                <div className="menu">
-                    <AiOutlineMenu />
-                </div>
+                <NavLink className="cart" to="/cart" >
+                    <IconButton aria-label="Show cart items">
+                        <Badge badgeContent={totalItems} color="secondary" style={{ color: 'white' }} >
+                            <ShoppingCart />
+                        </Badge>
+                    </IconButton>
+                </NavLink>
             </header>
         </section>
     )
