@@ -1,5 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import './styles.scss';
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import NewProduct from '../../components/NewProduct/index';
 import ProductsList from '../../components/ProductsList/index';
@@ -8,7 +10,7 @@ import CartList from '../../components/CartList/index';
 import { commerce } from '../../lib/commerce';
 
 // product data going in home page to populate on home page 
-function HomePage() {
+function Home() {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
 
@@ -33,14 +35,16 @@ function HomePage() {
 
     console.log(cart)
     return (
-        <div className="home-container">
-            <Navbar totalItems={cart.total_items}/>
-            <NewProduct />
-            <ProductsList products={products} onAddToCart={handleAddToCart}/>
-            <CartList cart={cart}/>
-            <About />
-        </div>
+        <Router>
+            <div className="home-container">
+                <Navbar totalItems={cart.total_items}/>
+                <NewProduct />
+                <ProductsList products={products} onAddToCart={handleAddToCart}/>
+                <CartList cart={cart}/>
+                <About />
+            </div>
+        </Router>
     )
 }
   
-export default HomePage; 
+export default Home; 
