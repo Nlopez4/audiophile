@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import NewProduct from '../../components/NewProduct/index';
 import ProductsList from '../../components/ProductsList/index';
 import About from '../../components/About/index';
+import CartList from '../../components/CartList/index';
 import { commerce } from '../../lib/commerce';
 
 // product data going in home page to populate on home page 
@@ -29,12 +30,14 @@ function HomePage() {
         fetchProducts();
         fetchCart();
     }, []); 
+
     console.log(cart)
     return (
         <div className="home-container">
             <Navbar totalItems={cart.total_items}/>
             <NewProduct />
             <ProductsList products={products} onAddToCart={handleAddToCart}/>
+            <CartList cart={cart}/>
             <About />
         </div>
     )

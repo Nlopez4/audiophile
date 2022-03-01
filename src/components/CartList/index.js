@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.scss';
 
-function CartList({ cart}) {
-
+function CartList({ cart }) {
+    console.log(cart)
     return (
         <section className="cart-section">
             <div className="cart-container">
