@@ -4,6 +4,7 @@
     min-height: 100vh;
     min-width: 100%;
     background-color: styles.$light-black;
+    margin-bottom: 8%;
 }
 
 .newprod-image {
@@ -73,6 +74,7 @@
     color: styles.$light-text-color;
     background-color: styles.$accent-color;
     border: none;
+    border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
     

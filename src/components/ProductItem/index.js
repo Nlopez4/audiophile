@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.scss';
 import xx59 from '../../images/xx59.jpg';
 import mark1 from '../../images/mark1.jpg';
 
