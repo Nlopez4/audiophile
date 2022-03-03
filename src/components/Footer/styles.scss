@@ -1,0 +1,26 @@
+@use '../../styles.scss';
+
+.footer-section {
+    min-width: 100%;
+    color: styles.$light-text-color;
+    background-color: styles.$light-black;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info {
+    margin-left: 2%;
+}
+
+.footer-p {
+    width: 400px;
+    font-family: styles.$heading-font;
+    font-weight: 500;
+    font-size: clamp(0.3rem, 1vw, 0.5rem);
+    line-height:1.5;
+    opacity: 0.5;
+}

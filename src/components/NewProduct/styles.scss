@@ -5,6 +5,7 @@
     min-width: 100%;
     background-color: styles.$light-black;
     margin-bottom: 8%;
+   
 }
 
 .newprod-image {
@@ -18,12 +19,15 @@
     width: 100%; 
     height: 90%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .newprod-info {
-   text-align: left;
-   position: relative;
-   top: 20%;
+    text-align: left;
+    position: relative;  
+    top: 10%;
 }
 
 .new-text {

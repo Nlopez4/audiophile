@@ -1,10 +1,12 @@
 @use '../../styles.scss';
 
 .about-section {
+    min-height: 100vh;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 13%
+    gap:13%;
 }
 
 .about-h1{
@@ -40,3 +42,9 @@ span {
   border-radius: 5px;
 }
 
+// .about-img-container {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
