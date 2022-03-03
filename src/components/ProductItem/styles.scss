@@ -9,6 +9,7 @@
     gap: 13%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8%;
 }
 
 
@@ -31,6 +32,7 @@
 .product-images {
     width: 500px;
     height: 500px;
+    border-radius: 5px;
 }
 
 .prod-1 {
@@ -71,6 +73,7 @@
     color: styles.$light-text-color;
     background-color: styles.$accent-color;
     border: none;
+    border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
 

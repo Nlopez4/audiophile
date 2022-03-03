@@ -1,1 +1,42 @@
+@use '../../styles.scss';
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%
+}
+
+.about-h1{
+    width: 400px;
+    font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(1.6rem, 1.5vw, 2.5rem);
+    line-height:1.5;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+span {
+    color:styles.$accent-color;
+}
+
+.about-p {
+    width: 400px;
+    font-family: styles.$heading-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    line-height:1.5;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.about-img {
+  width: 400px;
+  border-radius: 5px;
+}
 

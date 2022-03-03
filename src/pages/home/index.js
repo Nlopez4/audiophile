@@ -37,7 +37,7 @@ function HomePage() {
             <Navbar totalItems={cart.total_items}/>
             <NewProduct />
             <ProductsList products={products} onAddToCart={handleAddToCart}/>
-            <CartList cart={cart}/>
+            {/* <CartList cart={cart}/> */}
             <About />
         </div>
     )
