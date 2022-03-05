@@ -1,9 +1,9 @@
 import React, { useState, useEffect }  from 'react';
-import Navbar from '../components/Navbar';
-import NewProduct from '../components/NewProduct/index';
-import ProductsList from '../components/ProductsList/index';
-import About from '../components/About/index';
-import CartList from '../components/CartList/index';
+import Navbar from './Navbar';
+import NewProduct from './NewProduct/index';
+import ProductsList from './ProductsList/index';
+import About from './About/index';
+// import CartList from '../components/CartList/index';
 import { commerce } from '../lib/commerce';
 
 // product data going in home page to populate on home page 
