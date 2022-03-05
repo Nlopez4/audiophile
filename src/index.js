@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.scss';
-import AllPages from './pages/index';
-
+import AllRoutes from './routes';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AllPages />
+    <AllRoutes />
   </React.StrictMode>,
   document.getElementById('root')
 );

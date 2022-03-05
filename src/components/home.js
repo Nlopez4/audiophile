@@ -1,14 +1,13 @@
 import React, { useState, useEffect }  from 'react';
-import './styles.scss';
-import Navbar from '../../components/Navbar';
-import NewProduct from '../../components/NewProduct/index';
-import ProductsList from '../../components/ProductsList/index';
-import About from '../../components/About/index';
-import CartList from '../../components/CartList/index';
-import { commerce } from '../../lib/commerce';
+import Navbar from '../components/Navbar';
+import NewProduct from '../components/NewProduct/index';
+import ProductsList from '../components/ProductsList/index';
+import About from '../components/About/index';
+import CartList from '../components/CartList/index';
+import { commerce } from '../lib/commerce';
 
 // product data going in home page to populate on home page 
-function HomePage() {
+function Home() {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
 
@@ -43,4 +42,4 @@ function HomePage() {
     )
 }
   
-export default HomePage; 
+export default Home; 
