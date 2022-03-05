@@ -13,7 +13,7 @@ const Navbar = ({ totalItems }) => {
                 <NavLink className="audio-p" to='/'>
                     audiophile
                 </NavLink>
-                <NavLink className="cart" to="/cartpage" >
+                <NavLink className="cart" to="/cart" >
                     <IconButton aria-label="Show cart items">
                         <Badge badgeContent={totalItems} color="secondary" style={{ color: 'white' }} >
                             <ShoppingCart />
