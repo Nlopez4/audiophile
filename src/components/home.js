@@ -21,7 +21,6 @@ function Home({cartValue}) {
     console.log(cart)
     return (
         <div className="home-container">
-            <Navbar totalItems={cart.total_items}/>
             <NewProduct />
             <ProductsList products={products} value={cartValue} />
             <About />
