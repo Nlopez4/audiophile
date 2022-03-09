@@ -32,5 +32,3 @@ function ProductItem({product}) {
     )
 }
 export default ProductItem;
-
-// onClick={() => onAddToCart(product.id)} className
