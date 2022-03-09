@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './styles.scss';
+import { CartContext } from '../../context';
 
-function CartList({ cart }) {
+function CartList() {
+    const { cart } = useContext(CartContext); 
     console.log(cart)
     return (
         <section className="cart-section">
