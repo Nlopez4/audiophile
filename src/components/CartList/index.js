@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import './styles.scss';
+import CartItem from '../../components/CartItem';
 import { CartContext } from '../../context';
 
 function CartList() {
@@ -8,9 +9,10 @@ function CartList() {
     return (
         <section className="cart-section">
             <div className="cart-container">
-                <h1>Cart</h1>
-                <p>Total</p>
-                <button>CHECKOUT</button>
+               {cart.line_items?.map(line_item => (
+                    <CartItem key={line_item.id} lineItem={line_item}/>
+               ))}
+
             </div>
         </section>
     )
