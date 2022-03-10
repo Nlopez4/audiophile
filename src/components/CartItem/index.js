@@ -8,7 +8,7 @@ function CartItem({lineItem}) {
 
     return (
         <div>
-            {/* <img src={lineItem.media.source} /> */}
+            <img src={lineItem.image.url} />
            <h1>{lineItem.name}</h1>
            <p>{lineItem.quantity}</p>
            <p>{lineItem.line_total.formatted_with_symbol}</p>
