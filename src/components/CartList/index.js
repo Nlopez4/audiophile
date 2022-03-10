@@ -3,8 +3,9 @@ import './styles.scss';
 import CartItem from '../../components/CartItem';
 import { CartContext } from '../../context';
 
-function CartList() {
+function CartList({lineItem}) {
     const { cart } = useContext(CartContext); 
+    const { handleEmptyCart} = useContext(CartContext); 
     console.log(cart)
     if (cart &&  cart.total_unique_items > 0) {
         return (
@@ -14,6 +15,7 @@ function CartList() {
                         <CartItem key={line_item.id} lineItem={line_item}/>
                 ))}
                 <p>Total: {cart.subtotal.formatted_with_symbol}</p>
+                <button onClick={() => handleEmptyCart()}>Empty Cart</button>
                 <button>CHECK OUT</button>
                 </div>
             </section>
@@ -21,7 +23,7 @@ function CartList() {
     }
     return (
         <div>
-            <p>Your cart is empty.</p>
+            <p>No items in your cart</p>
         </div>
     )
 };

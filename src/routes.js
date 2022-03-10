@@ -14,8 +14,8 @@ function AllRoutes() {
         <Router>
             <Navbar totalItems={cart.total_items}/>
             <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route exact path='/cart' element={<CartList />} />
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/cart' element={<CartList />} />
             </Routes>
             <Footer />
         </Router>
