@@ -4,10 +4,14 @@ import ProductItem from '../../components/ProductItem/index';
 
 // All product(s) go in this component
 
-function ProductsList({product, onAddToCart}) {
+function ProductsList({products, onAddToCart}) {
     return (
         <div>
-            <ProductItem product={product} onAddToCart={onAddToCart}/>
+            {products.map((product) => (
+                <div key={product.id}>
+                    <ProductItem product={product} onAddToCart={onAddToCart}/>
+                </div>
+            ))}
         </div>
     )
 }
