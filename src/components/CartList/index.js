@@ -14,6 +14,7 @@ function CartList({lineItem}) {
                 {cart.line_items?.map(line_item => (
                         <CartItem key={line_item.id} lineItem={line_item}/>
                 ))}
+                <p>Total Items: {cart.total_items}</p>
                 <p>Total: {cart.subtotal.formatted_with_symbol}</p>
                 <button onClick={() => handleEmptyCart()}>Empty Cart</button>
                 <button>CHECK OUT</button>
