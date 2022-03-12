@@ -24,6 +24,9 @@ $heading-font: 'Manrope', sans-serif; // for headings and paragraphs
   margin: 0;
   box-sizing: border-box;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html, body {
   overflow-x: hidden;
@@ -33,6 +36,7 @@ html, body {
 .newprod-section,  
 .newprod-info,
 .about-section,
+.footer-section, 
 .footer-container,
 .cart-section,
 .cart-container,
