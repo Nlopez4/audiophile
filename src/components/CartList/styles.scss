@@ -42,7 +42,7 @@
 .empty-btn, .check-out-btn {
     font-family: styles.$heading-font;
     text-transform: uppercase;
-    width: 130px;
+    min-width: 130px;
     height: 40px;
     border: none; 
     border-radius: 5px;
