@@ -21,6 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: right;
+    gap: 20%;
 }
 
 .item-img {
@@ -28,5 +29,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    border-radius: 5px;
 
+}
+
+.item-h1, .item-qty-cart {
+    font-family: styles.$heading-font;
+    font-style: bold;
+}
+
+.item-h1 {
+    font-size: clamp(0.8rem, 1.3vw, 2.7rem);
+}
+
+.item-total {
+    font-family: styles.$heading-font;
+    font-size: clamp(0.5rem, 1.3vw, 2.0rem);
+    opacity: 0.6;
+}
+
+.item-qty-cart {
+    font-size: clamp(0.5rem, 1.3vw, 2.0rem);
+}
+
+.item-qty {
+    border: none;
+    width: 130px;
+    height: 40px;
+    background-color: grey;
+}
+
+.update-btn {
+    border: none;
+    background-color: none;
+    cursor: pointer;
 }
