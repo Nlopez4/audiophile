@@ -16,14 +16,14 @@ function CartItem({lineItem}) {
                 <div className="item-details-container">
                     <img className="item-img" src={lineItem.image.url} />
                     <div className="item-details">
-                        <h1>{lineItem.name}</h1>
-                        <div>{lineItem.line_total.formatted_with_symbol}</div>
+                        <h1 className="item-h1">{lineItem.name}</h1>
+                        <div className="item-total">{lineItem.line_total.formatted_with_symbol}</div>
                     </div>
                 </div>
                 <div className="item-qty">
-                    <button onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity + 1)}>+</button>
-                    <p>{lineItem.quantity}</p>
-                    <button onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity - 1)}>-</button>
+                    <button className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity + 1)}>+</button>
+                    <p className="item-qty-cart">{lineItem.quantity}</p>
+                    <button className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity - 1)}>-</button>
                 </div>
             </div>
         </section>
