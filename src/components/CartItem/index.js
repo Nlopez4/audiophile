@@ -21,9 +21,9 @@ function CartItem({lineItem}) {
                     </div>
                 </div>
                 <div className="item-qty">
-                    <button className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity + 1)}>+</button>
+                    <div className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity + 1)}>+</div>
                     <p className="item-qty-cart">{lineItem.quantity}</p>
-                    <button className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity - 1)}>-</button>
+                    <div className="update-btn" onClick={() => handleUpdateCartQty(lineItem.id, lineItem.quantity - 1)}>-</div>
                 </div>
             </div>
         </section>
