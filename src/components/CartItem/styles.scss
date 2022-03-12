@@ -1,0 +1,32 @@
+@use '../../styles.scss';
+
+.cart-item-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 10px;
+}
+
+
+.item-qty {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: right;
+}
+
+.item-img {
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}

@@ -22,11 +22,6 @@ function CartContextProvider({children}) {
         setCart(cart);
     }
 
-    const handleRemoveFromCart = async (productId) => {
-        const { cart } = await commerce.cart.remove(productId);
-        setCart(cart);
-    }
-
     const handleEmptyCart = async () => {
         const { cart } = await commerce.cart.empty();
         setCart(cart);
@@ -36,7 +31,7 @@ function CartContextProvider({children}) {
         fetchCart();
     }, []); 
 
-   const cartValue = {cart, fetchCart, handleAddToCart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}; 
+   const cartValue = {cart, fetchCart, handleAddToCart, handleUpdateCartQty, handleEmptyCart}; 
     
     return (
         <CartContext.Provider value={cartValue}>
