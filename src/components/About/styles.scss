@@ -4,6 +4,15 @@
     min-height: 100vh;
     min-width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:13%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:13%;
@@ -14,7 +23,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(1.6rem, 1.5vw, 2.5rem);
+    font-size: clamp(1.0rem, 1.5vw, 2.5rem);
     line-height:1.5;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -38,13 +47,28 @@ span {
 }
 
 .about-img {
-  width: 400px;
+  min-width: 400px;
   border-radius: 5px;
 }
 
-// .about-img-container {
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+@media screen and (max-width:550px) {
+
+   .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .about-h1, .about-p {
+        text-align: center;
+    }
+
+    .about-img {
+        min-width: 200px;
+        height: 185px;
+        object-fit: fill;
+    }
+    
+}
