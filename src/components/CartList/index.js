@@ -12,7 +12,7 @@ function CartList({lineItem}) {
             <section className="cart-section">
                 <div className="cart-container">
                     <div className="top-container">
-                        <p className="total-items-p">Cart ({cart.total_items})</p>
+                        <p className="total-items-p">Total In Cart ({cart.total_items})</p>
                         <button className="empty-btn" onClick={() => handleEmptyCart()}>EMPTY CART</button>
                     </div>
                     {cart.line_items?.map(line_item => (
