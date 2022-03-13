@@ -2,6 +2,9 @@ import React, {useContext} from 'react';
 import './styles.scss';
 import CartItem from '../../components/CartItem';
 import { CartContext } from '../../context';
+import { NavLink } from 'react-router-dom';
+
+
 
 function CartList({lineItem}) {
     const { cart } = useContext(CartContext); 
@@ -27,9 +30,14 @@ function CartList({lineItem}) {
         )
     }
     return (
-        <div>
-            <p>No items in your cart</p>
-        </div>
+        <section className="empty-cart-section">
+            <div className="empty-cart-container">
+                <h1 className="empty-h1">Oh no! There are no items in your cart!</h1>
+                <NavLink className="empty-cart" to="/">
+                    <button className="see-btn">See products</button>
+                </NavLink>
+            </div>
+        </section>
     )
 };
 
