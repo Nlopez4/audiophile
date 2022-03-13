@@ -11,7 +11,7 @@ function About() {
                     <p className="about-p">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
                 </div>
                 <div className="about-img-container">
-                    <img className="about-img" src={AboutImg} alt ="Individual with headphones" className="about-img"/>
+                    <img className="about-img" src={AboutImg} alt ="Individual with headphones" />
                 </div>
             </div>
         </section>

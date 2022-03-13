@@ -87,3 +87,14 @@
     font-size: clamp(0.5rem, 1.5vw, 1rem);
     cursor: pointer;
 }
+
+
+@media screen and (max-width:550px) {
+    .empty-btn, .check-out-btn {
+        min-width: 100px;
+        height: 30px;
+    }
+    
+
+    
+}
