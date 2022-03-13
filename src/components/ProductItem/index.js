@@ -13,7 +13,7 @@ function ProductItem({product}) {
                     <img className="product-images" src={product.image.url} alt ="headphone product"/>
                     <div className="hp-text">
                         <h1 className="prod-1">{product.name}</h1>
-                        <p className="p-1">{product.description}</p>
+                        <p className ="p-1" dangerouslySetInnerHTML={{__html: product.description}} />
                         <p className="price">{product.price.formatted_with_symbol}</p>
                         <button onClick={() => handleAddToCart(product.id)} className="cart-btn">Add to Cart</button>
                     </div>
