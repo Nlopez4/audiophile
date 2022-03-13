@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useEffect, useState, useReduce }  from 'react';
+import React, { useEffect, useState, }  from 'react';
 import { commerce } from './lib/commerce';
 
 

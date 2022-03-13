@@ -5,7 +5,6 @@ import { CartContext } from '../../context';
 
 // what is in our cart
 function CartItem({lineItem}) {
-    const { cart } = useContext(CartContext);
     const {handleUpdateCartQty} = useContext(CartContext)
 
     
@@ -14,7 +13,7 @@ function CartItem({lineItem}) {
         <section>
             <div className="cart-item-details">
                 <div className="item-details-container">
-                    <img className="item-img" src={lineItem.image.url} />
+                    <img className="item-img" src={lineItem.image.url} alt="headphones" />
                     <div className="item-details">
                         <h1 className="item-h1">{lineItem.name}</h1>
                         <div className="item-total">{lineItem.line_total.formatted_with_symbol}</div>
