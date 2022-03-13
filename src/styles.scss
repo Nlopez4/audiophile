@@ -40,7 +40,9 @@ html, body {
 .footer-container,
 .cart-section,
 .cart-container,
-.cart-item-details {
+.cart-item-details,
+.empty-cart-section,
+.empty-cart-container {
   margin: auto;
   max-height: 90%;
   max-width: 80%;
