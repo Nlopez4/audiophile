@@ -12,6 +12,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-basis: 50%;
 }
 
 .newprod-image {
@@ -48,7 +49,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(2.0rem, 3.5vw, 5rem);
+    font-size: clamp(1.5rem, 3.5vw, 5rem);
     line-height:1.5;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -74,7 +75,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     .newprod-info {
         display: flex;
         flex-direction: column;
@@ -84,12 +85,17 @@
 
     .newprod-image {
         height: 400px;
-        background-position: 85% 60%;
-        background-attachment: center;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .newprod-info-text {
         text-align: center;
+        width: 63%;
     }
     .newprod-name {
         width: 100%;

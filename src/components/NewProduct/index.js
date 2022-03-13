@@ -12,7 +12,7 @@ function NewProduct() {
                     <p className="newprod-info-text">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
                 </div>
                 <div className="newprod-image"></div>
-                </div>
+            </div>
         </section>
     )
 }

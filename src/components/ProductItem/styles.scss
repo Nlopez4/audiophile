@@ -13,7 +13,7 @@
 
 
 .image-bg {
-    width: 400px;
+    min-width: 400px;
     height: 500px;
     background-color: styles.$light-grey;
 }
@@ -29,7 +29,7 @@
 
 
 .product-images {
-    width: 500px;
+    min-width: (500px, 20vw, 100vh);
     height: 500px;
     border-radius: 5px;
 }
@@ -39,7 +39,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(2.0rem, 1.5vw, 2.5rem);
+    font-size: clamp(1.0rem, 1.5vw, 2.5rem);
     line-height:1.5;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -82,4 +82,34 @@
     font-family: styles.$heading-font;
     font-weight: bolder;
     font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+}
+
+@media screen and (max-width:550px) {
+    .product-images {
+        min-width: 200px;
+        height: 185px;
+        object-fit: fill;
+    }
+
+    .headphones-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 5%;
+    }
+
+    .prod-1 {
+        width: 160px;
+    }
+    .p-1 {
+        width: 150px;
+    }
+
+    .cart-btn {
+        min-width: 100px;
+        height: 30px;
+    }
+    
 }
