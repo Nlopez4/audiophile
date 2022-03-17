@@ -18,7 +18,6 @@ function Home({cartValue}) {
         fetchProducts();
     }, []); 
     const { cart } = useContext(CartContext); 
-    console.log(cart)
     return (
         <div className="home-container">
             <NewProduct />
