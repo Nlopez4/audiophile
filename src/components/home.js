@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useContext }  from 'react';
-import Navbar from './Navbar';
+import React, { useState, useEffect }  from 'react';
 import NewProduct from './NewProduct/index';
 import ProductsList from './ProductsList/index';
 import About from './About/index';
 import { commerce } from '../lib/commerce';
-import { CartContext } from '../context';
+
 
 
 function Home({cartValue}) {
@@ -17,7 +16,6 @@ function Home({cartValue}) {
     useEffect(() => {
         fetchProducts();
     }, []); 
-    const { cart } = useContext(CartContext); 
     return (
         <div className="home-container">
             <NewProduct />
