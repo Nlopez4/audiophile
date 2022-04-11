@@ -1,5 +1,5 @@
 # Front end mentor audiophile challenge
-Link to website: (https://audiophile-web-2022.netlify.app)
+
 
 ## About
 This project is a front end mentor e-commerce challenge. Although, it is not the entire challenge, this is smaller version of the site intended. Link to the challenge: (https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx)
