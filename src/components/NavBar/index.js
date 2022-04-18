@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
-import { IconButton, Badge, } from '@material-ui/core';
-import { ShoppingCart } from '@material-ui/icons';
+import { IconButton, Badge, } from '@mui/material';
+import { ShoppingCart } from '@mui/icons-material';
 
 
 
