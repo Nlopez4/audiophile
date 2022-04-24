@@ -5,7 +5,6 @@ import { CartContext } from '../../context';
 
 function ProductItem({product}) {
     const {handleAddToCart} = useContext(CartContext);
-    console.log(product)
     return (
         <section className="headphones-section">
             <div className="hp-container">
