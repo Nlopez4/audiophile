@@ -7,8 +7,6 @@ import { CartContext } from '../../context';
 function CartItem({lineItem}) {
     const {handleUpdateCartQty} = useContext(CartContext)
 
-    
-    
     return (
         <section>
             <div className="cart-item-details">

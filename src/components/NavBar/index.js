@@ -5,7 +5,6 @@ import { IconButton, Badge, } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
 
 
-
 const Navbar = ({ totalItems }) => {
     return (
         <section className="nav-section">

@@ -5,7 +5,6 @@ import About from './About/index';
 import { commerce } from '../lib/commerce';
 
 
-
 function Home({cartValue}) {
     const [products, setProducts] = useState([]);
 
