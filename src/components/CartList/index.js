@@ -5,11 +5,9 @@ import { CartContext } from '../../context';
 import { NavLink } from 'react-router-dom';
 
 
-
 function CartList({lineItem}) {
     const { cart } = useContext(CartContext); 
     const { handleEmptyCart} = useContext(CartContext); 
-    console.log(cart)
     if (cart &&  cart.total_unique_items > 0) {
         return (
             <section className="cart-section">
