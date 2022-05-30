@@ -51,15 +51,20 @@
     line-height:1.5;
     mix-blend-mode: normal;
     opacity: 0.75;
-    width: 50%;
+    width: 80%;
 }
 
-@media screen and (min-width:900px) {
+/* ----------------------------------------------- */
+// media qeuries
+
+// desktop
+@media screen and (min-width:1000px) {
     .newprod-image {
         background-image: url('../../images/ih.png');
         color: styles.$light-text-color; 
         background-size: 100%;
         background-repeat: no-repeat;
+        background-position: center;
         object-fit: fill;
         width: 80%; 
         height: 100%;
@@ -67,12 +72,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+       
     }
+   
 }
 
-
-
-
+// tablet
 @media screen and (min-width:700px) {
     .newprod-image {
         background-image: url('../../images/mobile-hero.jpg');
@@ -81,44 +86,7 @@
     }
 }
 
-@media screen and (max-width:900px) {
-    .newprod-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .newprod-image {
-        height: 400px;
-        background-position: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .newprod-info-text {
-        text-align: center;
-        width: 63%;
-    }
-    .newprod-name {
-        width: 100%;
-        text-align: center;
-    }
-
-    .newprod-bttn {
-        width: 100px;
-        height: 35px;
-    }
-}
+// mobile
 
 
-@media screen and (min-width:1500px) {
-    .newprod-image {
-        width: 800px;
-        height: 650px;
-        background-position: center;
-    }
-}
+
