@@ -66,24 +66,19 @@
         background-repeat: no-repeat;
         background-position: center;
         object-fit: fill;
-        width: 80%; 
-        height: 100%;
+        width: 750px; 
+        height: 800px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-       
     }
-   
+
 }
 
 // tablet
-@media screen and (min-width:700px) {
-    .newprod-image {
-        background-image: url('../../images/mobile-hero.jpg');
-        height: 600px;
-        background-position: center;
-    }
+@media screen and (max-width:700px) {
+    // fill in
 }
 
 // mobile
