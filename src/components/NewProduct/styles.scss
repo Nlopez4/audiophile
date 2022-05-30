@@ -13,7 +13,7 @@
 }
 
 .new-text {
-    font-size: clamp(0.6rem, 1.5vw, 2rem);
+    font-size: clamp(1.5rem, 1.8vw, 2rem);
     line-height:1.7;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: bold;
-    font-size: clamp(1.5rem, 3.5vw, 5rem);
+    font-size: clamp(2.5rem, 3.5vw, 5rem);
     line-height:1.5;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -37,7 +37,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(0.8rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
     line-height:1.5;
     mix-blend-mode: normal;
     line-height:1.5;
