@@ -13,7 +13,7 @@
 }
 
 .new-text {
-    font-size: clamp(1.5rem, 1.8vw, 2rem);
+    font-size: clamp(1.1rem, 1.8vw, 2rem);
     line-height:1.7;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -37,7 +37,7 @@
     font-family: styles.$heading-font;
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.0rem, 1.5vw, 1.8rem);
     line-height:1.5;
     mix-blend-mode: normal;
     line-height:1.5;
@@ -81,21 +81,43 @@
 
 
 // tablet
-@media screen and (max-width:700px) {
+@media screen and (min-width:700px) and (max-width: 999px) {
    .newprod-image {
     background-image: url('../../images/tablet-headphones.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
+    display: block;
     object-fit: fill;
     width: 100%; 
     height: 900px;
    }
-   .newprod-info{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   .newprod-container {
+    position: relative;
    }
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    margin-left: 10%;
+    margin-top: 52%;
+    justify-content: center;
+    width: 80%;
+    line-height:1.5px;
+    text-indent: left;
+    text-align: center;
+   }
+   .newprod-info-text {
+    width: 90%;
+    text-indent: left;
+    text-align: center;
+}
 
 }
 
