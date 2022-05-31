@@ -48,7 +48,7 @@
 // media qeuries
 
 // desktop
-@media screen and (min-width:958px) and (max-width: 1468px) {
+@media screen and (min-width:958px) {
     .newprod-image {
         background-image: url('../../images/ih.png');
         color: styles.$light-text-color; 
@@ -56,7 +56,7 @@
         background-repeat: no-repeat;
         background-position: center;
         object-fit: fill;
-        margin-top: -10%;
+        margin-top: -5%;
         width: 750px; 
         height: 800px;
         position: relative;
