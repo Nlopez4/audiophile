@@ -7,7 +7,7 @@ function NewProduct() {
         <section className="newprod-section">
             <div className="newprod-container">
                 <div className="newprod-info">
-                    <div class="overlay">
+                    <div className="overlay">
                         <h1 className="new-text">NEW PRODUCT</h1>
                         <p className="newprod-name">XX99 MARK II HEADPHONES</p>
                         <p className="newprod-info-text">Experience natural, life-like audio and exceptional build quality made for the passionate music enthusiast.</p>
